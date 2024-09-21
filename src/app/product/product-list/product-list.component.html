@@ -1,1 +1,70 @@
 <p>product-list works!</p>
+<!-- ctrl } comentar -->
+<!-- div.card tabulador -->
+<div class="card">
+    <div class="card-header">
+        Lista de productos
+    </div>
+    <div class="car-body">
+        <div class="row">
+            <div class="col-md-2">
+                Filtra por:
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control"> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Filtro: </h3>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table"*ngIf="productos.length">
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Modelo</th>
+                        <th>Descripcion</th>
+                        <th>Año</th>
+                        <th>Precio</th>
+                        <th>Marca</th>
+                        <th>Color</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let producto of productos">
+                        <td>
+                            <img width="100px" height="" :src="{{producto.ImagenUrl}}" alt="">
+                        </td>
+                        <!-- <td>{{producto.ImagenUrl}}</td> -->
+                        <td>{{producto.Modelo}}</td>
+                        <td>{{producto.Descripcion}}</td>
+                        <td>{{producto.Year}}</td>
+                        <td>{{producto.Precio}}</td>
+                        <td>{{producto.Marca}}</td>
+                        <td>{{producto.Color}}</td>
+                    </tr>
+                    <!-- <tr>
+                        <th>{{productos[1].Imagen}}</th>
+                        <th>{{productos[1].Modelo}}</th>
+                        <th>{{productos[1].Descripcion}}</th>
+                        <th>{{productos[1].Year}}</th>
+                        <th>{{productos[1].Precio}}</th>
+                        <th>{{productos[1].Marca}}</th>
+                        <th>{{productos[1].Color}}</th>
+                    </tr>
+                    <tr>
+                        <th>{{productos[2].Imagen}}</th>
+                        <th>{{productos[2].Modelo}}</th>
+                        <th>{{productos[2].Descripcion}}</th>
+                        <th>{{productos[2].Year}}</th>
+                        <th>{{productos[2].Precio}}</th>
+                        <th>{{productos[2].Marca}}</th>
+                        <th>{{productos[2].Color}}</th>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

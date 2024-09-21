@@ -1,0 +1,17 @@
+<p>ejemplo1 works!</p>
+
+<div>
+    <h1>Sumar dos numeros</h1>
+    <form [formGroup]="formulario">
+        <div>
+            <label for="">Numero1</label>
+            <input type="number" formcontrolName="numero1">
+        </div>
+        <div>
+            <label for="">Numero2</label>
+            <input type="number" formControlName="numero2">
+        </div>
+        <button (click)="sumarNumeros()">Sumar</button>
+        {{resultado}}
+    </form>
+</div>

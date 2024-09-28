@@ -1,0 +1,92 @@
+/* Estilos generales */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #5c6e8c;
+  }
+  
+  form {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #1C3B70;
+    color: #FFF;
+    font-family: Arial, sans-serif;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  input, select {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 25px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button {
+    width: 100%;
+    height: 40px;
+    background-color: #FFCC00;
+    color: #000;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #e6b800;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #FFCC00;
+    margin-bottom: 30px;
+  }
+  
+  /* Sección de resultados al lado derecho */
+  .resultados {
+    width: 45%;
+    background-color: #FFF;
+    color: #000;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #000;
+  }
+  
+  p.ng-invalid {
+    color: red;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #FFCC00;
+    margin-bottom: 20px;
+  }
+  .titulo{
+    height: 60px;
+    background-color: #1C3B70;
+  }
+  
+  
